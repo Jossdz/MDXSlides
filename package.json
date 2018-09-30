@@ -1,0 +1,19 @@
+{
+  "name": "mdx-slides",
+  "version": "1.0.0",
+  "description": "Slides with MDX starter kit",
+  "main": "index.js",
+  "repository": "https://github.com/Jossdz/MDXSlides.git",
+  "author": "Jose Carlos Correa Mandujano <carloscorrea.dev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "mdx-deck ./src/deck.mdx",
+    "build": "mdx-deck build --no-html ./src/deck.mdx"
+  },
+  "dependencies": {
+    "mdx-deck": "^1.7.7",
+    "mdx-deck-code-surfer": "^0.4.1",
+    "prism-react-renderer": "^0.1.4",
+    "raw-loader": "^0.5.1"
+  }
+}
