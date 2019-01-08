@@ -1,14 +1,32 @@
 import theme from 'mdx-deck/themes'
 
 export default {
-  // extends the default theme
   ...theme,
-  // add a custom font
   font: 'Poppins, Roboto, sans-serif',
-  // custom colors
+  h1: {
+    textTransform: 'uppercase',
+    fontWeight: 600,
+  },
+  h2: {
+    color: '#32C3FF'
+  },
+  monospace: '"Dank Mono", Josefin Sans, Sans Serif',
+  img: {
+    maxWidth: '100%'
+  },
+  weights: 400,
+  li: {
+    paddingBottom: '20px',
+    fontFamily: '"Ranga","Verdana"'
+  },
+  ul: {
+    listStyle: 'none',
+    paddingLeft: '20px',
+    display: 'inline-block'
+  },
   colors: {
     text: 'white',
     background: '#011627',
-    link: '#56555c',
+    link: '#7FDACA',
   }
 }
