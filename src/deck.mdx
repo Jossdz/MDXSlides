@@ -1,0 +1,63 @@
+
+import { Appear} from 'mdx-deck'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
+import nightOwl from 'prism-react-renderer/themes/nightOwl'
+
+import { Layout, Split } from './components'
+
+export { default as theme } from './theme'
+
+
+<!-- Remove this code and replace with your slides-->
+
+# Welcome
+
+---
+export default Layout
+
+<div>
+  <h2>mdx-deck:</h2>
+  <Appear>
+  <p>📝 Write presentations in markdown</p>
+  <p> ✍ Auto import awesome fonts from google fonts</p>
+  <p>⚛️ Import and use React components</p>
+  <p>💅 Customizable themes and components</p>
+  <p>0️⃣ Zero-config CLI</p>
+  <p>💁 Presenter mode</p>
+  <p>📓 Speaker notes</p>
+</Appear>
+</div>
+
+---
+export default Split
+
+![](https://raw.githubusercontent.com/jxnblk/mdx-deck/master/docs/images/overview-mode.png)
+
+## MDX 🤘🏼
+
+---
+export default Layout
+
+<CodeSurfer
+  title="Powerfull code show"
+  notes="Show your code"
+  code={require("!raw-loader!./Docs/my-snippet.js")}
+  lang="jsx"
+  theme={nightOwl}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {range:[3,6], notes: 'A range of,'},
+    {tokens:{1: [5]}, notes: 'an particular element'},
+    {lines: [1, 3], notes: 'or a couple lines'}
+  ]}
+/>
+
+---
+export default Layout
+
+<img src='https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2014/png/iconmonstr-code-fork-2.png&r=127&g=218&b=202' alt='fork_logo' width='50px'/>
+
+[Fork me on github!](https://github.com/Jossdz/MDXSlides)
+
+*with { ...♥︎ } by [jossdz](http://jossdz.com)*
